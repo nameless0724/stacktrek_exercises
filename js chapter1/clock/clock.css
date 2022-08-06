@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div.circle {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%
+}

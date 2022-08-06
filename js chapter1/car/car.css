@@ -1,0 +1,22 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+div {
+    width: 250px;
+    border: 1px solid black;
+    padding: auto;
+    margin: auto;
+    align-content: left;
+  }
+
+p {
+    font-size : auto;
+    background-color : white;
+    padding : 0;
+    margin : 0;
+    line-height : 20px;
+}
