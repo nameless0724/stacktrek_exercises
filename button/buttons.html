@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="buttons.css" rel="stylesheet">
+    <script defer src="buttons.js"></script>
+    <title>Website with Buttons</title>
+</head>
+<body>
+    <button data-modal-target="#profile"><b>PROFILE</b></button>
+    <div class="modal" id="profile">
+        <div class="modal-header">
+            <img src="pic.jpg" width= 25% height= 25%>
+            <div class="title">PROFILE</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>Irma Grace A. Beja</li>
+                <li>Programmer</li>
+            </ul>
+        </div>
+    </div>
+    <div id="overlay"></div><br>
+
+    <button data-modal-target="#hobbies"><b>HOBBIES</b></button>
+    <div class="modal" id="hobbies">
+        <div class="modal-header">
+            <div class="title">HOBBIES</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>Reading</li>
+                <li>Eating</li>
+                <li>Sleeping</li>
+                <li>Anything random(depends on the mood hahaha)</li>
+            </ul>
+        </div>
+    </div>
+    <div id="overlay"></div><br>
+
+    <button data-modal-target="#foods"><b>FAVORITE FOODS</b></button>
+    <div class="modal" id="foods">
+        <div class="modal-header">
+            <div class="title">FAVORITE FOODS</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+    <div class="modal-body">
+        <ul>
+            <li>Spaghetti</li>
+            <li>Lumpia</li>
+            <li>Potato Fries</li>
+            <li>Kimchi</li>
+            <li>Ramen</li>
+        </ul>
+    </div>
+    </div>
+    <div id="overlay"></div><br>
+
+    <button data-modal-target="#series"><b>FAVORITE SERIES</b></button>
+    <div class="modal" id="series">
+        <div class="modal-header">
+            <div class="title">FAVORITE SERIES</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <b>TV SERIES</b><br>
+            <ul>
+                <li>Peacemaker</li>
+                <li>Alice in Borderland</li>
+                <li>Kingdom</li>
+            </ul><br>
+            <b>ANIME SERIES</b><br>
+            <ul>
+                <li>Moriarty the Patriot</li>
+                <li>Gosick</li>
+            </ul><br>
+            <b>BOOK SERIES</b><br>
+            <ul>
+                <li>anything written by R.L. Stine</li>
+                <li>Archie Comics</li>
+            </ul>
+        </div>
+    </div>
+    <div id="overlay"></div><br>
+
+    <button data-modal-target="#movies"><b>FAVORITE MOVIES</b></button>
+    <div class="modal" id="movies">
+        <div class="modal-header">
+            <div class="title">FAVORITE MOVIES</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>John Wick</li>
+                <li>Joker(2019)</li>
+                <li>Equalizer 1 and 2</li>
+                <li>Eli</li>
+            </ul>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    </div>
+</body>
+</html>
