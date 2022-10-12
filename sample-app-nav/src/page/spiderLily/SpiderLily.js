@@ -61,10 +61,3 @@ const SpiderLily = () => {
 }
 
 export default SpiderLily; 
-
-/**<li key={index}>
-        <div>
-            <img src={item.imageUrl} alt={item.title}></img>
-            <div>{item.title}</div>
-        </div>
-    </li>**/
