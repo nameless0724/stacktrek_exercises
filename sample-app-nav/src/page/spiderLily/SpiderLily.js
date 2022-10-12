@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Lily from './Lily';
-/*import Lily2 from './Lily2';*/
 
 const url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=96358825614a5d3b1a1c3fd87fca2b47&format=json&nojsoncallback=true&page=1&text=spiderlily'
 
@@ -40,22 +39,32 @@ const SpiderLily = () => {
                 <h1>Spider Lily</h1>
                 <p>Spider Lily Gallery Walkthrough</p>
                 <ul>
-                    {spiderLilyList.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <div>
-                                    <img src={item.imageUrl} alt={item.title}></img>
-                                    <div>{item.title}</div>
-                                </div>
-                            </li>
-                        )
-                    })}
+                    <div className="card-group">
+                        {spiderLilyList.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    <div className="container mb-3">
+                                        <div className="card bg-secondary border-info" style={{width: '18rem'}}>
+                                            <img className="card-img-top" src={item.imageUrl} alt={item.title} />
+                                            <h5 className="card-title">{item.title}</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </div>
                 </ul>
             </header>
         </div>
-       /* <Lily2 />*/
     )
     
 }
 
-export default SpiderLily;
+export default SpiderLily; 
+
+/**<li key={index}>
+        <div>
+            <img src={item.imageUrl} alt={item.title}></img>
+            <div>{item.title}</div>
+        </div>
+    </li>**/

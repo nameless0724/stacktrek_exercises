@@ -3,8 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './page/About';
 import Home from './page/Home';
 import MovieListPage from './page/MovieListPage';
-import SpiderLily from './page/SpiderLily';
-
+import SpiderLily from './page/spiderLily/SpiderLily';
 
 function App() {
   return (
